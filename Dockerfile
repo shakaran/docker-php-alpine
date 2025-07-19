@@ -152,7 +152,7 @@ RUN apk add --no-cache --virtual .persistent-deps \
     && rm -f /composer.sh \
     && composer --ansi --version --no-interaction \
     && composer --no-interaction global require 'hirak/prestissimo' \
-    && composer --no-interaction global require 'localheinz/composer-normalize' \
+    && composer --no-interaction global require 'ergebnis/composer-normalize' \
     && composer clear-cache \
     && rm -rf /tmp/composer-setup.php /tmp/.htaccess \
     # show php info
